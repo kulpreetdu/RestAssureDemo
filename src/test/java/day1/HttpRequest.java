@@ -24,6 +24,7 @@ public class HttpRequest {
         System.out.println(res.statusCode());
     }
 
+    /*
     @Test
     public void test_2()
     {
@@ -35,7 +36,8 @@ public class HttpRequest {
     public void test_body()
     {
         baseURI ="https://reqres.in/api";
-        given().get("/users?page=2").then().statusCode(200).body("data[4].first_name",equalTo("George")).
+        given().get("/users?page=2").then().statusCode(200).
+                body("data[4].first_name",equalTo("George")).
             body("data.first_name",hasItems("George","Rachel"));
 
     }
@@ -90,19 +92,25 @@ public class HttpRequest {
         System.out.println(req.toJSONString());
     }
 
+*/
+     /*
     @Test
     public void test_delete()
     {
+    */
+
         /*
 
         JSONObject req= new JSONObject();
         req.put("name","test");
         req.put("job", "teacher");
         */
+
+    /*
         baseURI="https://reqres.in/api";
         //given().contentType(ContentType.JSON).accept(ContentType.JSON).body(req.toJSONString()).
                 when().delete("/users/2").then().statusCode(204);
         //System.out.println(req.toJSONString());
     }
-
+    */
 }

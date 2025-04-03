@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.*;
 
 public class LocalApiTest {
 
-    /*
+
     @Test
     public void lapi()
     {
@@ -24,10 +24,10 @@ public class LocalApiTest {
     public void lapi_post()
     {
         JSONObject req= new JSONObject();
-        req.put("firstname","testf");
-        req.put("lastname","testl");
-        req.put("subject","sub");
-        req.put("id","id4");
+        req.put("firstname","testfir");
+        req.put("lastname","testlast");
+        req.put("subject","sub1");
+        req.put("id",5);
         baseURI="http://localhost:3000/";
         given().contentType(ContentType.JSON).accept(ContentType.JSON).body(req.toJSONString()).
                 when().post("/users").
@@ -68,7 +68,7 @@ public class LocalApiTest {
         baseURI="http://localhost:3000/";
         given().get("/users").then().statusCode(200);;
     }
-*/
+
     @Test
     public void lgetqu()
     {
